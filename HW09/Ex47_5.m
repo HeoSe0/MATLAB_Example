@@ -14,7 +14,7 @@ while sum(chk)
         sol(2) = n; chk(2) = 0;
     end
 
-    if .01 < (s / n) && (s / n) < .5
+    if .01 < (s / n) && (s / n) < .5 && sol(3) == 0
         sol(3) = n; chk(3) = 0;
     end
 
