@@ -1,5 +1,5 @@
 epoch = 1000;
-tRange = linspace(0, 30, epoch);
+tRange = linspace(0, 60, epoch);
 x = zeros(1000, epoch); y = zeros(1000, epoch); z = zeros(1000, epoch);
 
 for i = 1:epoch
@@ -11,13 +11,12 @@ end
 figure(1)
 
 for i = 1:epoch
-    plot(x(:, i), z(:, i));
+    plot(x(:, i), y(:, i));
     hold on;
 end
 
 xlabel('x-position');
-ylabel('z-position');
-axis equal;
+ylabel('y-position');
 hold off;
 
 figure(2)
