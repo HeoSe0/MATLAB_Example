@@ -1,6 +1,6 @@
-epoch = 1000;
-tRange = linspace(0, 60, epoch);
-x = zeros(1000, epoch); y = zeros(1000, epoch); z = zeros(1000, epoch);
+epoch = 1000; steps = 1000;
+tRange = linspace(0, 60, steps);
+x = zeros(steps, epoch); y = zeros(steps, epoch); z = zeros(steps, epoch);
 
 for i = 1:epoch
     randY0 = [(-1)^randi(2) * rand * 3, (-1)^randi(2) * rand * 3, (-1)^randi(2) * rand * 3];
