@@ -1,5 +1,5 @@
 m = 1; k1 = 1; k2 = 3; k3 = 1;
-epoch = 500; steps = epoch * 30;
+epoch = 50; steps = epoch * 30;
 tRange = linspace(0, epoch, steps);
 x10 = 0; x20 = 2;
 A = [(k1 + k2) / m, -k2 / m; -k2 / m, (k3 + k2) / m];
