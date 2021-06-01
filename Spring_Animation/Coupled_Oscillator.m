@@ -17,6 +17,7 @@ leftGaps = 2; rightGaps = 2; midleGaps = 6;
 
 bounds1 = [min([x1, x2]) - leftGaps, max([x1, x2]) + midleGaps + rightGaps, -1, 1];
 bounds2 = [min([x1, x2]), max([x1, x2]), min([x1, x2]), max([x1, x2])];
+bounds3 = [min([X1, X2]), max([X1, X2]), min([X1, X2]), max([X1, X2])];
 springY = .5 * sin(16 * pi * linspace(0, 1, steps));
 
 f = figure;
@@ -41,7 +42,7 @@ subplot(5, 2, [6, 8, 10]);
 p2 = plot(X10, X20);
 title('Configuration space(Q_1,Q_2)');
 xlabel('Q_1'); ylabel('Q_2');
-axis('equal'); axis(bounds2);
+axis('equal'); axis(bounds3);
 
 shg; pause(1);
 
